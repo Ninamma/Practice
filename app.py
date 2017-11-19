@@ -45,4 +45,5 @@ def resulting():
     player = request.form["choice"]
     return rockPaperScissors(player)
 
-app.run(debug = True)
+if __name__ == '__main__':
+    app.run(debug = True)
