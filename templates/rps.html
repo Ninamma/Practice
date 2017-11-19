@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>Rock, paper, scissors!</title>
+</head>
+
+<body>
+  <h1>Let's play rock, paper scissors!</h1>
+  <div id="choose-weapon">
+        <form method="POST" action="/">
+          <input type="radio" name="choice" value="rock"><img src="static/rock.jpeg"></img><br>
+          <input type="radio" name="choice" value="paper"><img src="static/paper.jpeg"></img><br>
+          <input type="radio" name="choice" value="scissors"><img src="static/scissors.jpeg"></img><br>
+          <input type="submit" value="Submit" id="submitbutton">
+        </form>
+  </div>
+  <div id="results">
+    {{result}}
+  </div>
+</body>
+</html>
