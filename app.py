@@ -6,7 +6,7 @@ app = Flask("MyApp")
 def rockPaperScissors(player_input):
     choices = {'rock': 1, 'paper': 2, 'scissors': 3}
     computer = random.randint(1,3)
-    for key, value in choices.iteritems():
+    for key, value in choices.items():
         if computer == value:
             computer = key
 
